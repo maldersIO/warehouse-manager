@@ -1,0 +1,515 @@
+/*custom font*/
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+
+/*COLOUR OVERIDES*/
+.warehouse .primary-color {
+  color: var(--bs-primary);
+}
+.warehouse .nav-link {
+  color: var(--bs-primary);
+  cursor: pointer;
+}
+.warehouse .nav-link:focus,
+.nav-link:hover {
+  color: var(--bs-primary-hover);
+}
+.warehouse .dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--bs-primary);
+}
+.warehouse .btn {
+  font-weight: bold !important;
+}
+
+.warehouse button,
+.warehouse .button {
+  min-height: 1em !important;
+}
+.warehouse .btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary-hover);
+  --bs-btn-hover-border-color: var(--bs-primary-hover);
+  --bs-btn-active-bg: var(--bs-primary-hover);
+  --bs-btn-active-border-color: var(--bs-primary-hover);
+}
+.warehouse input.btn-primary {
+  background: var(--bs-primary)!important;
+}
+.warehouse input.btn-primary:hover {
+  background: var(--bs-primary-hover)!important;
+}
+.warehouse input,
+.warehouse select {
+  margin-bottom: 5px;
+  border-radius: 5px !important;
+  background: rgb(247, 247, 247)!important;
+  box-shadow: none!important;
+}
+
+.warehouse .btn-secondary {
+  --bs-btn-bg: var(--bs-secondary-color);
+  --bs-btn-border-color: var(--bs-secondary-color);
+  --bs-btn-hover-bg: var(--bs-secondary-hover);
+  --bs-btn-hover-border-color: var(--bs-secondary-hover);
+  --bs-btn-active-bg: var(--bs-secondary-hover);
+  --bs-btn-active-border-color: var(--bs-secondary-hover);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--bs-primary);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-gradient: none;
+}
+.warehouse .pagination {
+  --bs-pagination-color: var(--bs-primary);
+  --bs-pagination-bg: #eee;
+  --bs-pagination-hover-color: #fff;
+  --bs-pagination-hover-bg: var(--bs-primary-hover);
+  --bs-pagination-focus-color: var(--bs-primary);
+  --bs-pagination-focus-bg: var(--bs-primary-hover);
+  --bs-pagination-active-bg: var(--bs-primary);
+  --bs-pagination-active-border-color: var(--bs-primary);
+  --bs-pagination-disabled-color: #ccc;
+  --bs-pagination-disabled-bg: rgb(247,247,247);
+}
+
+/*SVG colour overrides*/
+.warehouse .level-1 .bin {
+  fill: #777;
+}
+
+.warehouse .level-2 .bin {
+  fill: #999;
+}
+
+.warehouse .level-3 .bin {
+  fill: #bbb;
+}
+
+.warehouse .level-4 .bin {
+  fill: #ddd;
+}
+
+.warehouse .bin {
+  stroke: #fff;
+  fill: #eee;
+  stroke-width: 2;
+}
+
+.warehouse .rack-number {
+  fill: #999;
+  font-weight: bold;
+}
+
+.warehouse svg .filled {
+  fill: var(--bs-primary) !important;
+  opacity: 1;
+}
+.warehouse svg .level-2 .filled {
+  fill: var(--bs-primary) !important;
+  opacity: 0.8;
+}
+.warehouse svg .level-3 .filled {
+  fill: var(--bs-primary) !important;
+  opacity: 0.6;
+}
+.warehouse svg .level-4 .filled {
+    fill: var(--bs-primary) !important;
+    opacity: 0.4;
+  }
+
+.warehouse svg .reserved {
+  fill: var(--bs-secondary-color) !important;
+  opacity: 1;
+  position: relative;
+}
+.warehouse svg .level-2 .reserved {
+    fill: var(--bs-secondary-color) !important;
+    opacity: 0.8;
+    position: relative;
+  }
+  .warehouse svg .level-3 .reserved {
+    fill: var(--bs-secondary-color) !important;
+    opacity: 0.6;
+    position: relative;
+  }
+  .warehouse svg .level-4 .reserved {
+    fill: var(--bs-secondary-color) !important;
+    opacity: 0.4;
+    position: relative;
+  }
+
+  .warehouse svg .locked {
+    fill: lightskyblue !important;
+    opacity: 1;
+    position: relative;
+  }
+  .warehouse svg .level-2 .locked {
+      fill: lightskyblue !important;
+      opacity: 0.8;
+      position: relative;
+    }
+    .warehouse svg .level-3 .locked {
+      fill: lightskyblue !important;
+      opacity: 0.6;
+      position: relative;
+    }
+    .warehouse svg .level-4 .locked {
+      fill: lightskyblue !important;
+      opacity: 0.4;
+      position: relative;
+    }  
+
+.warehouse svg .filled-filtered {
+  fill: var(--bs-primary) !important;
+}
+
+.warehouse svg .filled-filtered:hover {
+  fill: var(--bs-primary-hover) !important;
+}
+
+.warehouse svg .filled:hover {
+  fill: var(--bs-primary-hover) !important;
+}
+.warehouse svg .reserved:hover {
+  fill: var(--bs-secondary-hover) !important;
+}
+
+.warehouse .bin:hover {
+  fill: var(--bs-primary);
+  cursor: pointer;
+}
+/**/
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+.bg-secondary {
+  background-color: var(--bs-secondary-color) !important;
+}
+/*CAPACITY SVG*/
+
+.warehouse .capacity-svg .total-capacity {
+  fill: #eeeeee !important;
+}
+
+.warehouse .capacity-svg .capacity {
+  fill: var(--bs-primary) !important;
+}
+
+.warehouse .capacity-text {
+  fill: #ffffff;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.warehouse .total-capacity-text {
+  fill: #999999;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+/*FORMS STYLING*/
+.warehouse form .col {
+  padding-bottom: 0 !important;
+}
+.warehouse form label:after {
+  background: none !important;
+}
+.warehouse form label {
+  font-weight: bold;
+}
+
+
+.warehouse .submit {
+  background: var(--bs-primary) !important;
+}
+
+.warehouse .form-outline i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000 !important;
+}
+
+.warehouse .form-control:focus {
+  border-color: var(--bs-primary);
+}
+
+/*SINGLE WAREHOUSE CSS*/
+.warehouse {
+  background: rgb(247, 247, 247);
+  padding-top: 10px;
+}
+
+.warehouse .tab-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid var(--bs-border-color-translucent);
+  border-top: none;
+}
+.warehouse .nav-item {
+  margin-right: 5px;
+}
+.nav-tabs .nav-link {
+  background: #eee;
+  border: 1px solid var(--bs-border-color-translucent);
+  border-bottom: none;
+}
+
+.warehouse .nav-tabs .nav-link:hover,
+.warehouse .nav-tabs .nav-link.active {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: #fff;
+}
+.progress-bar{
+  background-color: var(--bs-secondary-color);
+}
+.warehouse .progress-bar-blank {
+  background: none;
+  color: #333;
+}
+.progress,
+.progress-stacked {
+  --bs-progress-height: 40px;
+}
+.warehouse .description {
+  font-size: 0.7em !important;
+  opacity: 0.7;
+  line-height: 1.2em !important;
+}
+
+.warehouse .badge {
+  width: auto !important;
+  height: auto !important;
+  min-width: 20px !important;
+  min-height: 20px !important;
+  line-height: 15px !important;
+  padding: 3px 5px !important;
+  display: block !important;
+}
+
+.warehouse .qrcode, .warehouse .pallet_id_label{
+  display: inline-block;
+}
+.warehouse .qrcode{
+  margin-right: 10px;
+}
+.warehouse .qrcode img{
+  max-height: 50px;
+}
+.warehouse .pallet_id_label{
+  color:#000;
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 0.9em;
+}
+.warehouse .pallet_id_label span{
+  text-transform: uppercase;
+  font-size: 0.5em;
+  font-weight: 300;
+  line-height: 1em;
+}
+/*DATA TABLES*/
+.warehouse .dataTables_wrapper .dataTables_filter, .warehouse .dataTables_wrapper .dataTables_length{
+  background: #eee !important;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: 0;
+}
+.warehouse .dataTables_wrapper .dataTables_filter label, 
+.warehouse .dataTables_wrapper .dataTables_filter input,
+.warehouse .dataTables_wrapper .dataTables_length label, 
+.warehouse .dataTables_wrapper .dataTables_length select{
+  margin-bottom: 0!important;
+}
+.warehouse .dataTables_wrapper .dataTables_info{
+  float: left;
+}
+.warehouse .dataTables_wrapper .dataTables_paginate{
+  margin-top: 10px;
+}
+.warehouse .dataTables_wrapper > div.row div.dataTables_filter label {
+  text-align: right;
+}
+
+a {
+  display: inline-block !important;
+}
+.dt-buttons.btn-group.flex-wrap button{
+  padding: 3px 8px;
+  margin: 6px 0;
+  font-size: .8em;
+}
+
+.dt-buttons.btn-group.flex-wrap button.btn-outline-primary{
+  color: var(--bs-primary);
+  border-color: #ccc;
+  font-weight: 300!important;
+}
+.dt-buttons.btn-group.flex-wrap button.btn-outline-primary:hover{
+  color: #FFF;
+  border-color: var(--bs-primary);
+}
+
+.warehouse table i {
+  margin-right: 5px;
+  cursor: pointer;
+  color: #444;
+  font-size: 1.2em;
+}
+
+.warehouse table i:hover {
+  color: #777;
+}
+
+table td,
+th {
+  vertical-align: middle;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.warehouse table.dataTable thead > tr > th.sorting::before,
+.warehouse table.dataTable thead > tr > th.sorting::after {
+  font-size: 8px !important;
+}
+
+.warehouse .dt-buttons.btn-group.flex-wrap {
+  float: right;
+  padding: 7px;
+}
+
+.warehouse .dataTables_filter,
+.warehouse .dataTables_length {
+  padding: 10px;
+}
+
+.warehouse div:where(.swal2-container) .swal2-html-container {
+  text-align: left !important;
+}
+
+.warehouse
+  div:where(.swal2-container)
+  button:where(.swal2-styled).swal2-confirm {
+  background-color: var(--bs-secondary-color);
+}
+.swal-wide {
+  width: 850px !important;
+}
+.swal2-confirm {
+  background: var(--bs-primary) !important;
+}
+.swal2-cancel {
+  background: var(--bs-secondary-color) !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+  box-shadow: none;
+}
+div:where(.swal2-container) .swal2-html-container {
+  font-size: 1em;
+  margin: 10px 0;
+  padding: 0;
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+  font-size: 3em;
+  margin: 10px 0;
+  padding: 0;
+}
+div:where(.swal2-icon) {
+  margin: 10px auto;
+}
+div:where(.swal2-container).swal2-center > .swal2-popup {
+  padding: 10px 30px;
+}
+div:where(.swal2-container) div:where(.swal2-actions) {
+  margin: 0 auto;
+}
+.warehouse .text-bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+/*LABEL STYLING*/
+.label-preview{
+  
+}
+.label {
+  padding: 10px;
+}
+.label .label-wrapper {
+  border: 4px solid #000;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+.label .label-header,
+.label .label-body,
+.label .label-footer {
+  border: 2px solid #000;
+  padding: 15px;
+  width: 101%;
+  margin-left: -2px;
+  margin-right: -2px;
+  position: relative;
+}
+.label .label-header{
+  margin-top: -2px;
+}
+.label .label-footer{
+  background:#000;
+  text-align: right;
+}
+.label .label-footer .text{
+  color: #FFF;
+}
+.label .label-header .amount {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  font-size: 2.5em;
+  color: #000;
+}
+.label .pallet-id {
+  font-size: 6em;
+  line-height: 1em;
+  font-weight: bold;
+  color: #000;
+}
+.label .text {
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+.label .head {
+  text-transform: uppercase;
+  font-size: 1em; 
+}
+.label .detail {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  font-weight:700;
+}
+.label .code-text {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* CSS styling for before/after/avoid. */
+.before {
+  page-break-before: always;
+}
