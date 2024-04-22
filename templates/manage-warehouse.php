@@ -482,14 +482,11 @@ $capacities = get_post_meta($post_id, 'capacities', true);
                                                     <th scope="row"><a class="nav-link"><?php echo $row->bin_id ?></a></th>
                                                     <td><?php echo $product_name ?></td>
                                                     <td>
-                                                        <div class="row g-3 align-items-center">
-                                                            <div class="col-auto">
-                                                                <input type="number" class="form-control" id="quantity-<?php echo $row->bin_id ?>" placeholder="Enter units" value="<?php echo $row->amount_of_bags ?>">
-                                                            </div>
-                                                            <div class="col-auto">
-                                                                <?php echo $pack_size * $row->amount_of_bags ?>kg <small>(<?php echo $row->amount_of_bags ?> units) available</small>
-                                                            </div>
+                                                    <div class="row g-3 align-items-center">
+                                                        <div class="col-auto">
+                                                            <?php echo $pack_size * $row->amount_of_bags ?>kg <small>(<?php echo $row->amount_of_bags ?> units) available </small>
                                                         </div>
+                                                    </div>
                                                     </td>
                                                     <td><?php echo $row->custom_input_2 ?></td>
                                                     <td><?php echo $row->pallet_id ?></td>
@@ -550,7 +547,6 @@ $capacities = get_post_meta($post_id, 'capacities', true);
                                                             <?php echo $pack_size * $row->amount_of_bags ?>kg <small>(<?php echo $row->amount_of_bags ?> units) available </small>
                                                         </div>
                                                     </div>
-
                                                 </td>
                                                 <td><?php echo $row->custom_input_2 ?></td>
                                                 <?php if ($row->expiry_date < date("Y-m-d")) { ?>

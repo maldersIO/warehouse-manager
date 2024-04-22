@@ -127,12 +127,6 @@ function create_custom_tables()
         PRIMARY KEY (`id`)
       )  $charset_collate;";
 
-    $sql_dwm_bays_insert = "INSERT INTO $dwm_bays (`id`, `name`, `color`, `warehouse_id`, `date_created`) VALUES
-    (1,	'Warehouse',	'',	'',	'2023-11-15 11:27:54'),
-    (2,	'Quarantine',	'',	'',	'2023-11-15 11:28:10'),
-    (3,	'Discard',	'',	'',	'2023-11-15 11:28:18'),
-    (4,	'Receiving',	'',	'',	'2023-12-18 08:17:07');";
-
     $dwm_bay_types = $wpdb->prefix . 'dwm_bay_types';
 
     $sql_dwm_bay_types = "CREATE TABLE $dwm_bay_types (
@@ -188,7 +182,6 @@ function create_custom_tables()
     dbDelta($sql_dwm_bin_statuses);
     dbDelta($sql_dwm_bin_statuses_insert);
     dbDelta($sql_dwm_bays);
-    dbDelta($sql_dwm_bays_insert);
     dbDelta($sql_dwm_bay_types);
     dbDelta($sql_dwm_bay_types_insert);
     dbDelta($sql_dwm_picking_list);
